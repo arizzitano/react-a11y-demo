@@ -1,0 +1,19 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "config/*.js",
+          "**/*.test.jsx",
+          "**/*.test.js"
+        ]
+      }
+    ],
+  },
+  "env": {
+    "jest": true
+  }
+}
